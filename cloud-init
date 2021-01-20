@@ -1,0 +1,68 @@
+#cloud-config
+autoinstall:
+  version: 1
+  early-commands:
+    - nwipe --nowait --autonuke
+#  interactive-sections:
+#    - network
+  identity:
+    hostname: digiadmin
+    password: $c153d9805fd3f4dd944532ce1bf1f241cbbea1107257a97da9ba2e56a3c01ef2
+    username: DigiAdmin
+  keyboard:
+    layout: en
+    variant: uk
+  locale: en_gb
+#  apt:
+#    preserve_sources_list: false
+#    disable_suites: [backports]
+#    sources:
+#      rudder.list:
+#        source: |
+#          deb http://repository.rudder.io/apt/6.1/ $(lsb_release -cs) main
+#      vscode.list:
+#        source: |
+#          deb https://packages.microsoft.com/repos/vscode stable main
+#      teams.list:
+#        source: |
+#          deb https://packages.microsoft.com/repos/ms-teams stable main
+  packages:
+  - build-essential
+  - ubuntu-desktop
+#  - apt-transport-https
+#  - git
+#  - gdebi
+#  - python3-dev
+#  - python3-pip
+#  - python3-matplotlib
+#  - openjdk-11-jdk
+#  - curl
+#  - rudder-agent
+#  - code
+#  - teams
+#  late-commands:
+#  - curtin in-target --target=/target -- usermod -p [...] root
+#  - fwupdmgr refresh
+#  - fwupdmgr update -y
+#  - apt update
+#  - apt full-upgrade -y
+#  - wget -P $HOME/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#  - gdebi $HOME/Downloads/google-chrome-stable_current_amd64.deb --non-interactive
+#  - rm $HOME/Downloads/google-chrome-stable_current_amd64.deb
+#  - wget -P $HOME/Downloads https://zoom.us/client/latest/zoom_amd64.deb
+#  - gdebi --non-interactive $HOME/Downloads/zoom_amd64.deb
+#  - rm -f $HOME/Downloads/zoom_amd64.deb
+#  - echo '104.248.170.79' > /var/rudder/cfengine-community/policy_server.dat
+#  - rudder agent inventory
+#  - rudder agent run
+#  - SERIAL=$(sudo dmidecode -s system-serial-number)
+#  - NEWHOSTNAME='digilocal-'$SERIAL
+#  - hostnamectl set-hostname $NEWHOSTNAME
+#  # needs to go in /etc/skel but not quite sure how or where
+#  - gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'google-chrome.desktop']"
+#  #
+#  - pip3 install pygame==2.0.0.dev10
+#  - pip3 install requests
+#  - useradd -m DigiHome
+#  - echo 'DigiHome:Digi@Home' | chpasswd
+#  - ufw enable
