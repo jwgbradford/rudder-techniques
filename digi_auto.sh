@@ -17,7 +17,7 @@ apt-get update
 apt-get install code -y
 
 #install pip packages
-sudo -H pip3 install pygame==2.0.0.dev10
+pip3 install pygame==2.0.0.dev10
 
 #install snap packages
 snap install slack --classic
@@ -32,7 +32,7 @@ gdebi --non-interactive $HOME/Downloads/zoom_amd64.deb
 rm -f $HOME/Downloads/zoom_amd64.deb
 
 #set desktop favourites
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'google-chrome.desktop']"
+#gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'google-chrome.desktop']"
 
 #set ufw to default
 ufw enable
