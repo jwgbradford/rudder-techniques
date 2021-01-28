@@ -2,10 +2,10 @@ apt update
 apt full-upgrade -y
 
 #install core dependencies
-apt install -y python3-dev openjdk-11-jdk
+apt install -y python3-dev openjdk-11-jdk gdebi
 
 #install apt packages
-apt install -y python3-pip
+apt install -y python3-pip git
 
 #install vs code by apt
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
