@@ -5,14 +5,13 @@ apt full-upgrade -y
 apt install -y python3-dev openjdk-11-jdk gdebi
 
 #install apt packages
-apt install -y python3-pip git
+apt install -y apt-transport-https python3-pip git
 
 #install vs code by apt
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
 sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
-apt-get install apt-transport-https -y
 apt-get update
 apt-get install code -y
 
