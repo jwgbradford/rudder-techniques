@@ -45,25 +45,25 @@ NEWHOSTNAME='digilocal-'$SERIAL
 hostnamectl set-hostname $NEWHOSTNAME
 
 #install rudder.io agent
-wget --quiet -O- "https://repository.rudder.io/apt/rudder_apt_key.pub" | apt-key add -
-echo "deb http://repository.rudder.io/apt/6.1/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
-echo "rudder sources added"
+#wget --quiet -O- "https://repository.rudder.io/apt/rudder_apt_key.pub" | apt-key add -
+#echo "deb http://repository.rudder.io/apt/6.1/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
+#echo "rudder sources added"
 
-apt-get update
-apt-get install rudder-agent -y
-echo '104.248.170.79' > /var/rudder/cfengine-community/policy_server.dat
-rudder agent inventory
-rudder agent run
+#apt-get update
+#apt-get install rudder-agent -y
+#echo '104.248.170.79' > /var/rudder/cfengine-community/policy_server.dat
+#rudder agent inventory
+#rudder agent run
 
 #set up default user
-useradd -m DigiHome
-echo 'DigiHome:Digi@Home' | chpasswd
+#useradd -m DigiHome
+#echo 'DigiHome:Digi@Home' | chpasswd
 
 #final update and cleanup
-apt update
-apt full-upgrade -y
-apt autoremove -y
+#apt update
+#apt full-upgrade -y
+#apt autoremove -y
 
 #check and update firmware
-fwupdmgr refresh
-fwupdmgr update -y
+#fwupdmgr refresh
+#fwupdmgr update -y
