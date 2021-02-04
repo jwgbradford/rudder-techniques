@@ -7,14 +7,6 @@ apt install -y openjdk-11-jdk gdebi
 #install apt packages
 apt install -y apt-transport-https python3-pip git
 
-##install vs code by apt
-#wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-#install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
-#sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-
-#apt-get update
-#apt-get install code -y
-
 ##install pip packages
 #pip3 install pygame==2.0.0.dev10
 
@@ -55,14 +47,14 @@ rudder agent inventory
 rudder agent run
 
 ##set up default user
-#useradd -m DigiHome
-#echo 'DigiHome:Digi@Home' | chpasswd
+useradd -m DigiHome
+echo 'DigiHome:Digi@Home' | chpasswd
 
 ##final update and cleanup
-#apt update
-#apt full-upgrade -y
-#apt autoremove -y
+apt update
+apt full-upgrade -y
+apt autoremove -y
 
 ##check and update firmware
-#fwupdmgr refresh
-#fwupdmgr update -y
+fwupdmgr refresh
+fwupdmgr update -y
