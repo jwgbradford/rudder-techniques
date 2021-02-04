@@ -23,7 +23,8 @@ gdebi --non-interactive $HOME/Downloads/zoom_amd64.deb
 rm -f $HOME/Downloads/zoom_amd64.deb
 
 ##set desktop favourites
-#gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'google-chrome.desktop']"
+wget -P /etc/dconf/profile/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/user
+wget -P /etc/dconf/db/local.d/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/00-favourite-apps
 
 ##set ufw to default
 ufw enable
