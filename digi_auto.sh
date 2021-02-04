@@ -22,13 +22,13 @@ apt install -y apt-transport-https python3-pip git
 #snap install slack --classic
 
 ##install .deb packages
-#wget -P $HOME/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-#gdebi $HOME/Downloads/google-chrome-stable_current_amd64.deb --non-interactive
-#rm $HOME/Downloads/google-chrome-stable_current_amd64.deb
+wget -P $HOME/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+gdebi $HOME/Downloads/google-chrome-stable_current_amd64.deb --non-interactive
+rm $HOME/Downloads/google-chrome-stable_current_amd64.deb
 
-#wget -P $HOME/Downloads https://zoom.us/client/latest/zoom_amd64.deb
-#gdebi --non-interactive $HOME/Downloads/zoom_amd64.deb
-#rm -f $HOME/Downloads/zoom_amd64.deb
+wget -P $HOME/Downloads https://zoom.us/client/latest/zoom_amd64.deb
+gdebi --non-interactive $HOME/Downloads/zoom_amd64.deb
+rm -f $HOME/Downloads/zoom_amd64.deb
 
 ##set desktop favourites
 #gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'google-chrome.desktop']"
