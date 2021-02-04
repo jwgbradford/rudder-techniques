@@ -34,26 +34,25 @@ rm -f $HOME/Downloads/zoom_amd64.deb
 #gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'google-chrome.desktop']"
 
 ##set ufw to default
-#ufw enable
+ufw enable
 
-##SERIAL=$(sudo dmidecode -t system | grep Serial)
-##set -- $SERIAL
-##Get serial number of laptop
-#SERIAL=$(sudo dmidecode -s system-serial-number)
-#NEWHOSTNAME='digilocal-'$SERIAL
-##Set hostname
-#hostnamectl set-hostname $NEWHOSTNAME
+#SERIAL=$(sudo dmidecode -t system | grep Serial)
+#set -- $SERIAL
+#Get serial number of laptop
+SERIAL=$(sudo dmidecode -s system-serial-number)
+NEWHOSTNAME='digilocal-'$SERIAL
+Set hostname
+hostnamectl set-hostname $NEWHOSTNAME
 
-##install rudder.io agent
-#wget --quiet -O- "https://repository.rudder.io/apt/rudder_apt_key.pub" | apt-key add -
-#echo "deb http://repository.rudder.io/apt/6.1/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
-#echo "rudder sources added"
+#install rudder.io agent
+wget --quiet -O- "https://repository.rudder.io/apt/rudder_apt_key.pub" | apt-key add -
+echo "deb http://repository.rudder.io/apt/6.1/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
 
-#apt-get update
-#apt-get install rudder-agent -y
-#echo '104.248.170.79' > /var/rudder/cfengine-community/policy_server.dat
-#rudder agent inventory
-#rudder agent run
+apt-get update
+apt-get install rudder-agent -y
+echo '104.248.170.79' > /var/rudder/cfengine-community/policy_server.dat
+rudder agent inventory
+rudder agent run
 
 ##set up default user
 #useradd -m DigiHome
