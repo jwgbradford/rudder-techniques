@@ -33,7 +33,7 @@ hostnamectl set-hostname $NEWHOSTNAME
 
 #install rudder.io agent
 wget --quiet -O- "https://repository.rudder.io/apt/rudder_apt_key.pub" | apt-key add -
-echo "deb http://repository.rudder.io/apt/6.1/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
+echo "deb http://repository.rudder.io/apt/6.2/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
 
 apt-get update
 apt-get install rudder-agent -y
