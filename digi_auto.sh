@@ -1,3 +1,4 @@
+#!/bin/sh 
 add-apt-repository multiverse
 apt update
 
