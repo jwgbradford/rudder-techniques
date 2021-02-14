@@ -44,8 +44,8 @@ rudder agent run
 ##final update and cleanup
 apt update
 apt full-upgrade -y
-apt autoremove -y
+#apt autoremove -y
 
 ##check and update firmware
-fwupdmgr refresh
-fwupdmgr update -y
+#fwupdmgr refresh
+#fwupdmgr update -y
