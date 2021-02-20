@@ -32,7 +32,7 @@ ufw enable
 #Get serial number of laptop
 SERIAL=$(sudo dmidecode -s system-serial-number)
 NEWHOSTNAME='digilocal-'$SERIAL
-Set hostname
+#Set hostname
 hostnamectl set-hostname $NEWHOSTNAME
 
 #install rudder.io agent
