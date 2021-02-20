@@ -2,11 +2,15 @@
 add-apt-repository multiverse
 apt update
 
+##install extra apt packages
+#apt install 
+
 ##install pip packages
 #pip3 install pygame==2.0.0.dev10
 
 ##install snap packages
 #snap install slack --classic
+mkdir /run/mydir
 
 ##install .deb packages
 wget -P /run/mydir https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
