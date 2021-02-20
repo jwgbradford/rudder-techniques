@@ -3,7 +3,7 @@ add-apt-repository multiverse
 apt update
 
 ##install extra apt packages
-#apt install 
+apt install wget python3-pip apt-transport-https gdebi openjdk-11-jdk
 
 ##install pip packages
 #pip3 install pygame==2.0.0.dev10
