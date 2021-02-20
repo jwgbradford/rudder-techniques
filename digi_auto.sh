@@ -10,16 +10,15 @@ apt update
 
 ##install snap packages
 #snap install slack --classic
-mkdir /run/mydir
 
 ##install .deb packages
-wget -P /run/mydir https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-gdebi /run/mydir/google-chrome-stable_current_amd64.deb --non-interactive
-rm /run/mydir/google-chrome-stable_current_amd64.deb
+wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
+rm /home/digiadmin/google-chrome-stable_current_amd64.deb
 
-wget -P /run/mydir https://zoom.us/client/latest/zoom_amd64.deb
-gdebi --non-interactive /target/temp-inst/zoom_amd64.deb
-rm -f /run/mydir/zoom_amd64.deb
+wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
+gdebi --non-interactive /home/digiadmin/zoom_amd64.deb
+rm -f /home/digiadmin/zoom_amd64.deb
 
 ##set desktop favourites
 wget -P etc/dconf/profile/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/user
@@ -44,7 +43,7 @@ apt-get update
 apt-get install rudder-agent -y
 echo '104.248.170.79' > /var/rudder/cfengine-community/policy_server.dat
 rudder agent inventory
-rudder agent run
+rudder agent home
 
 ##final update and cleanup
 apt update
