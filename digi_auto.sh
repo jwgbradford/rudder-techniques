@@ -3,26 +3,26 @@ add-apt-repository multiverse
 apt update
 
 ##install extra apt packages
-apt install wget python3-pip apt-transport-https gdebi openjdk-11-jdk
+#apt install 
 
 ##install pip packages
-#pip3 install pygame==2.0.0.dev10
+#pip3 install pygame
 
 ##install snap packages
 #snap install slack --classic
 
 ##install .deb packages
-wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
-rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
+wget -P /target/home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+gdebi /target/home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
+rm -f /target/home/digiadmin/google-chrome-stable_current_amd64.deb
 
-wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
-gdebi /home/digiadmin/zoom_amd64.deb --non-interactive 
-rm -f /home/digiadmin/zoom_amd64.deb
+wget -P /target/home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
+gdebi /target/home/digiadmin/zoom_amd64.deb --non-interactive 
+rm -f /target/home/digiadmin/zoom_amd64.deb
 
 ##set desktop favourites
-wget -P etc/dconf/profile/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/user
-wget -P /etc/dconf/db/local.d/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/00-favourite-apps
+wget -P /target/etc/dconf/profile/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/user
+wget -P /target/etc/dconf/db/local.d/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/00-favourite-apps
 
 ##set ufw to default
 ufw enable
@@ -37,11 +37,11 @@ hostnamectl set-hostname $NEWHOSTNAME
 
 #install rudder.io agent
 wget --quiet -O- "https://repository.rudder.io/apt/rudder_apt_key.pub" | apt-key add -
-echo "deb http://repository.rudder.io/apt/6.2/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
+echo "deb http://repository.rudder.io/apt/6.2/ $(lsb_release -cs) main" > /target/etc/apt/sources.list.d/rudder.list
 
 apt-get update
 apt-get install rudder-agent -y
-echo '104.248.170.79' > /var/rudder/cfengine-community/policy_server.dat
+echo '104.248.170.79' > /target/var/rudder/cfengine-community/policy_server.dat
 rudder agent inventory
 rudder agent home
 
