@@ -24,6 +24,9 @@ rm -f /target/home/digiadmin/zoom_amd64.deb
 wget -P /target/etc/dconf/profile/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/user
 wget -P /target/etc/dconf/db/local.d/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/00-favourite-apps
 
+##set user
+useradd -m DigiHome
+echo 'DigiHome:Digi@Home' | chpasswd
 ##set ufw to default
 ufw enable
 
