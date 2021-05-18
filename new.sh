@@ -3,7 +3,7 @@ add-apt-repository multiverse
 apt update
 
 ##install extra apt packages
-#apt install 
+apt install -y apt-transport-https gdebi openjdk-11-jdk wget python3-pip
 
 ##install pip packages
 #pip3 install pygame
@@ -42,8 +42,8 @@ hostnamectl set-hostname $NEWHOSTNAME
 wget --quiet -O- "https://repository.rudder.io/apt/rudder_apt_key.pub" | apt-key add -
 echo "deb http://repository.rudder.io/apt/6.2/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
 
-apt-get update
-apt-get install rudder-agent -y
+apt update
+apt install -y rudder-agent
 echo '104.248.170.79' > /var/rudder/cfengine-community/policy_server.dat
 rudder agent inventory
 rudder agent home
@@ -51,8 +51,8 @@ rudder agent home
 ##final update and cleanup
 apt update
 apt full-upgrade -y
-#apt autoremove -y
+apt autoremove -y
 
 ##check and update firmware
-#fwupdmgr refresh
-#fwupdmgr update -y
+fwupdmgr refresh
+fwupdmgr update -y
