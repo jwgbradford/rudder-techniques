@@ -25,8 +25,8 @@ wget -P /etc/dconf/profile/ https://raw.githubusercontent.com/jwgbradford/rudder
 wget -P /etc/dconf/db/local.d/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/00-favourite-apps
 
 ##set user
-useradd -m DigiHome
-echo 'DigiHome:Digi@Home' | chpasswd
+#useradd -m DigiHome
+#echo 'DigiHome:Digi@Home' | chpasswd
 ##set ufw to default
 ufw enable
 
