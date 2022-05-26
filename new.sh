@@ -39,14 +39,14 @@ NEWHOSTNAME='digilocal-'$SERIAL
 hostnamectl set-hostname $NEWHOSTNAME
 
 #install rudder.io agent
-wget --quiet -O- "https://repository.rudder.io/apt/rudder_apt_key.pub" | apt-key add -
-echo "deb http://repository.rudder.io/apt/6.2/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
+wget --quiet -O /etc/apt/trusted.gpg.d/rudder_apt_key.gpg "https://repository.rudder.io/apt/rudder_apt_key.gpg"
+echo "deb http://repository.rudder.io/apt/7.1/ $focal main" > /etc/apt/sources.list.d/rudder.list
 
 apt update
 apt install -y rudder-agent
-echo '104.248.170.79' > /var/rudder/cfengine-community/policy_server.dat
+rudder agent policy-server 104.248.170.79
 rudder agent inventory
-rudder agent home
+rudder agent run
 
 ##final update and cleanup
 apt update
