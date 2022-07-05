@@ -27,6 +27,10 @@ wget -P /etc/dconf/db/local.d/ https://raw.githubusercontent.com/jwgbradford/rud
 ##set user
 #useradd -m DigiHome
 #echo 'DigiHome:Digi@Home' | chpasswd
+wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/users.txt
+newusers ./users.txt
+rm users.txt
+
 ##set ufw to default
 ufw enable
 
