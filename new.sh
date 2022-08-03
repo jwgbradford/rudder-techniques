@@ -1,6 +1,7 @@
 #!/bin/bash
 add-apt-repository multiverse
 apt update
+spt upgrade -y
 
 ##install extra apt packages
 apt install -y apt-transport-https gdebi openjdk-11-jdk wget python3-pip
@@ -20,13 +21,7 @@ wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
 gdebi /home/digiadmin/zoom_amd64.deb --non-interactive 
 rm -f /home/digiadmin/zoom_amd64.deb
 
-##set desktop favourites
-wget -P /etc/dconf/profile/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/user
-wget -P /etc/dconf/db/local.d/ https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/00-favourite-apps
-
 ##set user
-#useradd -m DigiHome
-#echo 'DigiHome:Digi@Home' | chpasswd
 wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/users.txt
 newusers ./users.txt
 rm users.txt
