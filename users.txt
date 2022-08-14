@@ -1,1 +1,1 @@
-digihome:Digi@Home:1702:1702:DigiHome:/home/digihome:/bin/bash
+digilocal:Digi@Local:1702:1702:DigiLocal:/home/digilocal:/bin/bash
