@@ -38,7 +38,7 @@ wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
 gdebi /home/digiadmin/zoom_amd64.deb --non-interactive 
 rm -f /home/digiadmin/zoom_amd64.deb
 
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/new.sh|sudo /bin/bash
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/ms_teams.sh|sudo /bin/bash
 
 ##set user
 wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/users.txt
