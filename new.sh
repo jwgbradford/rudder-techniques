@@ -12,13 +12,13 @@ apt update
 apt upgrade -y
 
 ##install extra apt packages
-apt install -y apt-transport-https gdebi openjdk-11-jdk wget python3-dev python3-pip curl python3-tk libreoffice
+apt install -y apt-transport-https gdebi openjdk-11-jdk wget ##python3-dev python3-pip curl python3-tk libreoffice
 
 ##install pip packages
-pip3 install pygame pygal requests pandas numpy scikit-learn
+##pip3 install pygame pygal requests pandas numpy scikit-learn
 
 ##install snap packages
-snap install slack --classic
+##snap install slack --classic
 
 # install vs code by apt
 sudo apt-get install wget gpg
