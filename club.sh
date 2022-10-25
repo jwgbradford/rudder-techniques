@@ -41,9 +41,9 @@ rm -f /home/digiadmin/zoom_amd64.deb
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/ms_teams.sh|sudo /bin/bash
 
 ##set user
-wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/users.txt
-newusers ./users.txt
-rm users.txt
+wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/club.txt
+newusers ./club.txt
+rm club.txt
 
 #install rudder.io agent
 wget --quiet -O /etc/apt/trusted.gpg.d/rudder_apt_key.gpg "https://repository.rudder.io/apt/rudder_apt_key.gpg"
