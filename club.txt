@@ -1,0 +1,1 @@
+digilocal:Digi@Local:1702:1702:DigiLocal:/home/digilocal:/bin/bash
