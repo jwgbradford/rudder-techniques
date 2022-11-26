@@ -1,5 +1,4 @@
-sudo mkdir /usr/share/arduino
-cd /usr/share/arduino
+cd /usr/share
 wget https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.2_Linux_64bit.zip
 unzip -q arduino-ide_2.0.2_Linux_64bit.zip
 sudo rm arduino-ide_2.0.2_Linux_64bit.zip
