@@ -1,8 +1,10 @@
 sudo mkdir /usr/share/arduino
 cd /usr/share/arduino
-wget https://downloads.arduino.cc/arduino-1.8.19-linux64.tar.xz
-tar -xf arduino-1.8.19-linux64.tar.xz
-sudo rm arduino-1.8.19-linux64.tar.xy
-cd arduino-1.8.19
+wget https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.2_Linux_64bit.zip
+unzip -q arduino-ide_2.0.2_Linux_64bit.zip
+sudo rm arduino-ide_2.0.2_Linux_64bit.zip
+cd arduino-2.0.2
 sudo ./install.sh
 sudo adduser digilocal dialout
+sudo code --install-extension vsciot-vscode.vscode-arduino
+sudo code --install-extension ms-vscode.cpptools
