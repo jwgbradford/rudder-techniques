@@ -12,7 +12,7 @@ apt update
 apt upgrade -y
 
 ##install extra apt packages
-apt install -y apt-transport-https gdebi openjdk-11-jdk wget ##python3-dev python3-pip curl python3-tk libreoffice
+apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg ##python3-dev python3-pip curl python3-tk libreoffice
 
 ##install pip packages
 ##pip3 install pygame pygal requests pandas numpy scikit-learn
@@ -21,13 +21,13 @@ apt install -y apt-transport-https gdebi openjdk-11-jdk wget ##python3-dev pytho
 ##snap install slack --classic
 
 # install vs code by apt
-sudo apt-get install wget gpg
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
-sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
-rm -f packages.microsoft.gpg
-apt update
-apt install code
+#sudo apt-get install wget gpg
+#wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+#install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+#sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+#rm -f packages.microsoft.gpg
+#apt update
+#apt install code
 
 ##install .deb packages
 wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
