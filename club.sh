@@ -12,7 +12,7 @@ apt update
 apt upgrade -y
 
 #install extra apt packages
-apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg python3-dev python3-pip python3-tk python3-imaging-tk
+apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg python3-dev python3-pip python3-tk python3-pil.imagetk
 
 #install pip packages
 pip3 install pygame pygal requests pandas numpy scikit-learn pillow 
