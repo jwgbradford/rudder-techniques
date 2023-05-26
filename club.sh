@@ -18,7 +18,7 @@ apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg python3-dev pyt
 pip3 install pygame pygal requests pandas numpy scikit-learn pillow 
 
 #install extra apt packages
-apt install -y python3-tk python3-pil.imagetk
+apt install -y python3-tk python3-pil.imagetk git
 
 #install snap packages
 snap install slack --classic
