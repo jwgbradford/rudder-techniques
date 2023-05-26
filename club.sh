@@ -33,9 +33,9 @@ wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_
 gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
 rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
-wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
-gdebi /home/digiadmin/zoom_amd64.deb --non-interactive 
-rm -f /home/digiadmin/zoom_amd64.deb
+#wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
+#gdebi /home/digiadmin/zoom_amd64.deb --non-interactive 
+#rm -f /home/digiadmin/zoom_amd64.deb
 
 #set user
 wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/club.txt
@@ -44,7 +44,7 @@ rm club.txt
 
 #install rudder.io agent
 wget --quiet -O /etc/apt/trusted.gpg.d/rudder_apt_key.gpg "https://repository.rudder.io/apt/rudder_apt_key.gpg"
-echo "deb http://repository.rudder.io/apt/7.2/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
+echo "deb http://repository.rudder.io/apt/7.3/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
 apt-get update
 apt-get install rudder-agent -y
 rudder agent policy-server 104.248.170.79
