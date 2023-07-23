@@ -1,3 +1,4 @@
+#!/bin/bash
 rm /usr/local/bin/google_wipe.sh
 rm /etc/systemd/system/google_wipe.service
 wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/google-chrome.tar.xz -P /usr/local/bin
