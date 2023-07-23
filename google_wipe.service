@@ -1,8 +1,8 @@
 [Unit]
-After=network.target
+Description=chrome wipe script
 
 [Service]
 ExecStart=/usr/local/bin/google_wipe.sh
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
