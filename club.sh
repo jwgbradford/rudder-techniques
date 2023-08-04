@@ -54,6 +54,9 @@ rudder agent policy-server 104.248.170.79
 rudder agent inventory
 rudder agent run
 
+# set up chrome wipe
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/chrome-wipe.sh|sudo /bin/bash
+
 #final update and cleanup
 apt update
 apt upgrade -y
