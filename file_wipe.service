@@ -1,0 +1,8 @@
+[Unit]
+Description=file wipe script
+
+[Service]
+ExecStart=/usr/local/bin/file_wipe.sh
+
+[Install]
+WantedBy=multi-user.target
