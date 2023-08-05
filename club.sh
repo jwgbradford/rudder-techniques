@@ -42,6 +42,9 @@ curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudd
 # set up chrome wipe
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/chrome-wipe.sh|sudo /bin/bash
 
+# set up file wiper
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/file_wipe_setup.sh|sudo /bin/bash
+
 # set up launcher
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/set_launcher.sh|sudo /bin/bash
 
