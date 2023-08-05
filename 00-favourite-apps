@@ -1,2 +1,3 @@
+# Snippet sets gedit, terminal and nautilus as default favorites for all users
 [org/gnome/shell]
-favorite-apps = ['org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'google-chrome.desktop', 'teams.desktop', 'zoom.desktop']
+favorite-apps = ['nautilus.desktop', 'google-chrome.desktop', 'code.desktop']
