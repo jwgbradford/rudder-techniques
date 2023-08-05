@@ -42,13 +42,7 @@ newusers ./club.txt
 rm club.txt
 
 #install rudder.io agent
-wget --quiet -O /etc/apt/trusted.gpg.d/rudder_apt_key.gpg "https://repository.rudder.io/apt/rudder_apt_key.gpg"
-echo "deb http://repository.rudder.io/apt/7.3/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/rudder.list
-apt-get update
-apt-get install rudder-agent -y
-rudder agent policy-server 104.248.170.79
-rudder agent inventory
-rudder agent run
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
 
 # set up chrome wipe
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/chrome-wipe.sh|sudo /bin/bash
