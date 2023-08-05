@@ -21,7 +21,7 @@ pip3 install pygame pygal requests pandas numpy scikit-learn pillow
 apt install -y python3-tk python3-pil.imagetk git
 
 #install snap packages
-snap install slack --classic
+# snap install slack --classic
 
 #install vs code by apt
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
