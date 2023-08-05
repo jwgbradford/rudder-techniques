@@ -12,13 +12,13 @@ apt update
 apt upgrade -y
 
 #install apt packages
-apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg python3-dev python3-pip
+apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg
+
+#install extra apt packages
+apt install -y python3-dev python3-pip python3-tk python3-pil.imagetk git
 
 #install pip packages
 pip3 install pygame pygal requests pandas numpy scikit-learn pillow 
-
-#install extra apt packages
-apt install -y python3-tk python3-pil.imagetk git
 
 #install snap packages
 # snap install slack --classic
@@ -35,10 +35,6 @@ apt install code
 wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
 rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
-
-#wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
-#gdebi /home/digiadmin/zoom_amd64.deb --non-interactive 
-#rm -f /home/digiadmin/zoom_amd64.deb
 
 #set user
 wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/club.txt
