@@ -1,3 +1,9 @@
-# Snippet sets gedit, terminal and nautilus as default favorites for all users
 [org/gnome/shell]
 favorite-apps = ['nautilus.desktop', 'google-chrome.desktop', 'code.desktop']
+[org/gnome/desktop/background]
+picture-uri = 'file///usr/share/backgrounds/digilocal-1920-1080.png'
+[org/gnome/desktop/session]
+idle-delay = 0
+[org/gnome/settings-daemon/plugins/power]
+idle-dim = 0
+sleep-inactive-ac-timeout = 0
