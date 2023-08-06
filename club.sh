@@ -49,9 +49,6 @@ curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/file
 wget -P /usr/share/backgrounds https://digilocal.org.uk/wp-content/uploads/2023/01/digilocal-1920-1080.png
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/set_launcher.sh|sudo /bin/bash
 
-# set custom background
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/custombgdigilocal.sh|sudo /bin/bash
-
 #final update and cleanup
 apt update
 apt upgrade -y
