@@ -21,7 +21,7 @@ apt install -y python3-dev python3-pip python3-tk python3-pil.imagetk git
 pip3 install pygame pygal requests pandas numpy scikit-learn pillow 
 
 # install snap packages
-# snap install slack --classic
+snap install slack --classic
 
 # install vs code by apt
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/vs_code_install.sh|sudo /bin/bash
@@ -41,10 +41,10 @@ rm club.txt
 # curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
 
 # set up chrome wipe
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/chrome-wipe.sh|sudo /bin/bash
+# curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/chrome-wipe.sh|sudo /bin/bash
 
 # set up file wiper
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/file_wipe_setup.sh|sudo /bin/bash
+# curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/file_wipe_setup.sh|sudo /bin/bash
 
 # set up launcher
 wget -P /usr/share/backgrounds https://digilocal.org.uk/wp-content/uploads/2023/01/digilocal-1920-1080.png
