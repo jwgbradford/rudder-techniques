@@ -15,10 +15,10 @@ apt upgrade -y
 apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg
 
 # install extra apt packages
-apt install -y python3-dev python3-pip python3-tk python3-pil.imagetk git
+apt install -y python3-full python3-dev python3-pip python3-tk python3-pil.imagetk git python3-pygame python3-pygal python3-pandas
 
-# install pip packages
-pip3 install pygame pygal requests pandas numpy scikit-learn pillow 
+# install pip packages - ignored until figure out virtual environments
+# pip3 install pygame pygal requests pandas numpy scikit-learn pillow 
 
 # install snap packages
 snap install slack --classic
