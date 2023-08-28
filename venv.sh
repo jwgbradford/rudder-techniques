@@ -13,4 +13,4 @@ sudo python3 -m venv /home/digilocal/.venv
 #source /home/digilocal/.venv/bin/activate
 sudo /home/digilocal/.venv/bin/pip3 install --no-input --upgrade pip
 sudo /home/digilocal/.venv/bin/pip3 install --no-input --upgrade Pillow
-sudo /home/digilocal/.venv/bin/pip3 install --no-input pygame pandas pygal tk pil.imagetk
+sudo /home/digilocal/.venv/bin/pip3 install --no-input pygame pandas pygal tk
