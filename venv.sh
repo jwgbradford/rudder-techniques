@@ -18,4 +18,4 @@ sudo python3 -m venv /home/digilocal/.venv
 # install pip packages
 sudo /home/digilocal/.venv/bin/pip3 install --no-input --upgrade pip
 sudo /home/digilocal/.venv/bin/pip3 install --no-input --upgrade Pillow
-sudo /home/digilocal/.venv/bin/pip3 install --no-input pygame pandas scikit-learn pygal python-tk 
+sudo /home/digilocal/.venv/bin/pip3 install --no-input pygame pandas scikit-learn pygal python3-tk 
