@@ -1,4 +1,4 @@
-# run updates - not required on new build
+ests# run updates - not required on new build
 #sudo apt update
 #sudo apt dist-upgrade -y
 
@@ -16,4 +16,4 @@ wget -O /home/digilocal/.config/Code/User/settings.json https://raw.githubuserco
 # install pip packages
 sudo /home/digilocal/.venv/bin/pip3 install --no-input --upgrade pip
 sudo /home/digilocal/.venv/bin/pip3 install --no-input --upgrade Pillow
-sudo /home/digilocal/.venv/bin/pip3 install --no-input pygame pandas scikit-learn pygal tk 
+sudo /home/digilocal/.venv/bin/pip3 install --no-input pygame pandas scikit-learn pygal tk requests
