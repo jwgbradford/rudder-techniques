@@ -52,7 +52,7 @@ curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/set_
 
 # final update and cleanup
 apt update
-apt upgrade -y
+apt dist-upgrade -y
 apt autoremove -y
 
 # set ufw to default
