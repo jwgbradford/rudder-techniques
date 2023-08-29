@@ -12,13 +12,13 @@ apt update
 apt upgrade -y
 
 # install main apt packages
-apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg
+apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg git
 
-# install extra apt packages
-apt install -y python3-full python3-dev python3-pip python3-tk python3-pil.imagetk git python3-pygame python3-pygal python3-pandas
+# install extra apt packages - replaced by venv pip
+#apt install -y python3-full python3-dev python3-pip python3-tk python3-pil.imagetk git python3-pygame python3-pygal python3-pandas
 
 # install pip packages - ignored until figure out virtual environments
-# pip3 install pygame pygal requests pandas numpy scikit-learn pillow 
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv.sh|sudo /bin/bash
 
 # install snap packages
 snap install slack --classic
