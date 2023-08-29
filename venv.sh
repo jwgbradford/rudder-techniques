@@ -1,4 +1,4 @@
-ests# run updates - not required on new build
+# run updates - not required on new build
 #sudo apt update
 #sudo apt dist-upgrade -y
 
