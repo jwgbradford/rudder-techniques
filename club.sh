@@ -38,7 +38,7 @@ rm club.txt
 
 # install rudder.io agent
 # commented out until Rudder release Lunar dist
-# curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
 
 # set up chrome wipe
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/chrome-wipe.sh|sudo /bin/bash
