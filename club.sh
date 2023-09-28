@@ -17,9 +17,6 @@ apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg git
 # install extra apt packages - replaced by venv pip
 #apt install -y python3-full python3-dev python3-pip python3-tk python3-pil.imagetk git python3-pygame python3-pygal python3-pandas
 
-# install pip packages - ignored until figure out virtual environments
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv.sh|sudo /bin/bash
-
 # install snap packages
 snap install slack --classic
 
@@ -31,14 +28,17 @@ wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_
 gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
 rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
+# install rudder.io agent
+# commented out until Rudder release Lunar dist
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
+
 # set user
 wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/club.txt
 newusers ./club.txt
 rm club.txt
 
-# install rudder.io agent
-# commented out until Rudder release Lunar dist
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
+# install pip packages - ignored until figure out virtual environments
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv.sh|sudo /bin/bash
 
 # set up chrome wipe
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/chrome-wipe.sh|sudo /bin/bash
