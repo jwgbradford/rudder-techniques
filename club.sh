@@ -30,7 +30,7 @@ rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
 # install rudder.io agent
 # commented out until Rudder release Lunar dist
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
+#curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
 
 # set user
 wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/club.txt
