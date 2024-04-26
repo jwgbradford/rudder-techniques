@@ -29,15 +29,14 @@ gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
 rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
 # install rudder.io agent
-# commented out until Rudder release Lunar dist
-#curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
 
 # set user
 wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/club.txt
 newusers ./club.txt
 rm club.txt
 
-# install pip packages - ignored until figure out virtual environments
+# install pip packages in venv
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv.sh|sudo /bin/bash
 
 # set up chrome wipe
