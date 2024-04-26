@@ -6,7 +6,7 @@ sudo apt dist-upgrade -y
 #sudo apt purge -y python3-tk python3-pil.imagetk python3-pygame python3-pygal python3-pandas
 
 # update to full python install
-sudo apt install -y python3-full
+sudo apt install -y python3-full python3-dev python3-pip
 sudo apt autoremove -y
 
 # delete old venv
