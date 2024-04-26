@@ -28,6 +28,10 @@ wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_
 gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
 rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
+# autostart chrome on login
+mkdir /home/digilocal/.config/autostart/
+ln -sf /usr/share/applications/google-chrome.desktop /home/digilocal/.config/autostart/
+
 # install rudder.io agent
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
 
