@@ -43,7 +43,7 @@ curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/chrome-wipe.sh|sudo /bin/bash
 
 # set up file wiper
-#curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/file_wipe_setup.sh|sudo /bin/bash
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/file_wipe_setup.sh|sudo /bin/bash
 
 # set up launcher
 wget -P /usr/share/backgrounds https://digilocal.org.uk/wp-content/uploads/2023/01/digilocal-1920-1080.png
