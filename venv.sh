@@ -19,4 +19,4 @@ wget -O /home/digilocal/.config/Code/User/settings.json https://raw.githubuserco
 # install pip packages as digilocal
 sudo -u digilocal /home/digilocal/.venv/bin/pip3 install --no-input --upgrade pip
 sudo -u digilocal /home/digilocal/.venv/bin/pip3 install --no-input --upgrade Pillow
-sudo -u digilocal /home/digilocal/.venv/bin/pip3 install --no-input pygame pygal tk requests cv2 ursina matplotlib pandas scikit-learn
+sudo -u digilocal /home/digilocal/.venv/bin/pip3 install --no-input pygame pygal tk requests opencv-python ursina matplotlib pandas scikit-learn
