@@ -28,10 +28,6 @@ wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_
 gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
 rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
-# autostart chrome on login
-mkdir /home/digilocal/.config/autostart/
-ln -sf /usr/share/applications/google-chrome.desktop /home/digilocal/.config/autostart/
-
 # install rudder.io agent
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
 
@@ -40,7 +36,11 @@ wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/club
 newusers ./club.txt
 rm club.txt
 
-# install pip packages in venv
+# autostart chrome on digilocal user login
+mkdir /home/digilocal/.config/autostart/
+ln -sf /usr/share/applications/google-chrome.desktop /home/digilocal/.config/autostart/
+
+# install pip packages in DigiLocal/.venv
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv.sh|sudo /bin/bash
 
 # set up chrome wipe
