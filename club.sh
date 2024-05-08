@@ -20,28 +20,28 @@ apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg git
 # install snap packages
 #snap install slack --classic
 
-# install vs code by apt
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/vs_code_install.sh|sudo /bin/bash
+# install rudder.io agent
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
 
 # install chrome .deb packages
 wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
 rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
-# install rudder.io agent
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
-
 # set user
 wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/club.txt
 newusers ./club.txt
 rm club.txt
 
+# set up user /.venv
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv.sh|sudo /bin/bash
+
+# install vs code by apt
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/vs_code_install.sh|sudo /bin/bash
+
 # autostart chrome on digilocal user login
 mkdir /home/digilocal/.config/autostart/
 ln -sf /usr/share/applications/google-chrome.desktop /home/digilocal/.config/autostart/
-
-# install pip packages in DigiLocal/.venv
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv.sh|sudo /bin/bash
 
 # set up chrome wipe
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/chrome-wipe.sh|sudo /bin/bash
