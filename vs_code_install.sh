@@ -14,3 +14,4 @@ sudo -u digilocal code --install-extension oderwat.indent-rainbow
 
 # prepare for .venv
 sudo -u digilocal mkdir /home/digilocal/.config/Code/User
+wget -O /home/digilocal/.config/Code/User/settings.json https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/vs_code_settings.json
