@@ -9,7 +9,7 @@ apt update
 apt install code
 
 # post install extensions
-sudo -u digilocal code --install-extension ms.python.python
+sudo -u digilocal code --install-extension ms-python.python
 sudo -u digilocal code --install-extension oderwat.indent-rainbow
 
 # configure for .venv
