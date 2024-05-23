@@ -14,12 +14,6 @@ apt upgrade -y
 # install main apt packages
 apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg git
 
-# install extra apt packages - replaced by venv pip
-#apt install -y python3-full python3-dev python3-pip python3-tk python3-pil.imagetk git python3-pygame python3-pygal python3-pandas
-
-# install snap packages
-#snap install slack --classic
-
 # install rudder.io agent
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
 
@@ -35,6 +29,9 @@ rm club.txt
 
 # set up user /.venv
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv.sh|sudo /bin/bash
+
+# add venues
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venue.sh|sudo /bin/bash
 
 # install vs code by apt
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/vs_code_install.sh|sudo /bin/bash
