@@ -27,9 +27,6 @@ rm -f /home/digiadmin/zoom_amd64.deb
 wget -P /usr/share/backgrounds https://digilocal.org.uk/wp-content/uploads/2023/01/digilocal-1920-1080.png
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/enviro_setup.sh|sudo /bin/bash
 
-#install rudder.io agent
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
-
 ##set user
 wget https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/users.txt
 newusers ./users.txt
