@@ -15,13 +15,13 @@ apt upgrade -y
 apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg libreoffice google-chrome-stable zoom
 
 ##install .deb packages
-##wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-##apt -i /home/digiadmin/google-chrome-stable_current_amd64.deb
-##rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
+wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+apt install /home/digiadmin/google-chrome-stable_current_amd64.deb
+rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
-##wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
-##apt -i /home/digiadmin/zoom_amd64.deb
-##rm -f /home/digiadmin/zoom_amd64.deb
+wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
+apt install /home/digiadmin/zoom_amd64.deb
+rm -f /home/digiadmin/zoom_amd64.deb
 
 # set up desktop environment
 wget -P /usr/share/backgrounds https://digilocal.org.uk/wp-content/uploads/2023/01/digilocal-1920-1080.png
