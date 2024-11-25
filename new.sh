@@ -16,11 +16,11 @@ apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg libreoffice
 
 ##install .deb packages
 wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
+apt -i /home/digiadmin/google-chrome-stable_current_amd64.deb
 rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
 wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
-gdebi /home/digiadmin/zoom_amd64.deb --non-interactive 
+apt -i /home/digiadmin/zoom_amd64.deb
 rm -f /home/digiadmin/zoom_amd64.deb
 
 # set up desktop environment
