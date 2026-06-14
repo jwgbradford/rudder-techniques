@@ -15,7 +15,7 @@ apt upgrade -y
 apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg git
 
 # install rudder.io agent
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/rudder.sh|sudo /bin/bash
+# https://raw.githubusercontent.com/jwgbradford/rudder-techniques/refs/heads/master/rudder.sh
 
 # install chrome .deb packages
 wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
