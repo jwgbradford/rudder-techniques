@@ -12,7 +12,7 @@ apt update
 apt upgrade -y
 
 # install main apt packages
-apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg git
+apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg gits libsdl2-dev -y
 
 # install rudder.io agent
 # https://raw.githubusercontent.com/jwgbradford/rudder-techniques/refs/heads/master/rudder.sh
