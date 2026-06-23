@@ -12,16 +12,7 @@ apt update
 apt upgrade -y
 
 # install main apt packages
-apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg libreoffice google-chrome-stable zoom
-
-##install .deb packages
-wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-apt install /home/digiadmin/google-chrome-stable_current_amd64.deb
-rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
-
-wget -P /home/digiadmin https://zoom.us/client/latest/zoom_amd64.deb
-apt install /home/digiadmin/zoom_amd64.deb
-rm -f /home/digiadmin/zoom_amd64.deb
+apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg libreoffice google-chrome-stable
 
 # set up desktop environment
 wget -P /usr/share/backgrounds https://digilocal.org.uk/wp-content/uploads/2023/01/digilocal-1920-1080.png
@@ -34,7 +25,7 @@ rm users.txt
 
 ##final update and cleanup
 apt update
-apt dist-upgrade -y
+apt upgrade -y
 apt autoremove -y
 
 ##set ufw to default
