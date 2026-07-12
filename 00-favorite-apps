@@ -1,5 +1,5 @@
 [org/gnome/shell]
-favorite-apps = ['nautilus.desktop', 'google-chrome.desktop', 'code.desktop']
+favorite-apps = ['nautilus.desktop', 'google-chrome.desktop', 'zed.desktop']
 [org/gnome/desktop/background]
 picture-uri = 'file:///usr/share/backgrounds/digilocal-1920-1080.png'
 [org/gnome/desktop/session]
