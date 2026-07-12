@@ -21,7 +21,7 @@ apt install python3-pygame python3-tk python3-pil.imagetk python3-pygal python3-
 
 # install chrome .deb packages
 wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-gdebi /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
+apt /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
 rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
 # set user
@@ -39,7 +39,7 @@ curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venu
 # curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/vs_code_install.sh|sudo /bin/bash
 
 # add zed editor
-sudo -u digilocal curl -f https://zed.dev/install.sh | sh
+su -c 'curl -f https://zed.dev/install.sh|sh' digilocal
 
 # autostart chrome on digilocal user login
 mkdir /home/digilocal/.config/autostart/
