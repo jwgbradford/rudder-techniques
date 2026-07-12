@@ -21,7 +21,7 @@ apt install python3-pygame python3-tk python3-pil.imagetk python3-pygal python3-
 
 # install chrome .deb packages
 wget -P /home/digiadmin https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-apt /home/digiadmin/google-chrome-stable_current_amd64.deb --non-interactive
+apt /home/digiadmin/google-chrome-stable_current_amd64.deb
 rm -f /home/digiadmin/google-chrome-stable_current_amd64.deb
 
 # set user
