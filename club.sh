@@ -13,6 +13,8 @@ apt upgrade -y
 
 # install main apt packages
 apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg gits libsdl2-dev -y
+# install python packages
+apt install python3-pygame python3-tk python3-pil.imagetk python3-pygal python3-requests -y
 
 # install rudder.io agent
 # https://raw.githubusercontent.com/jwgbradford/rudder-techniques/refs/heads/master/rudder.sh
@@ -28,13 +30,16 @@ newusers ./club.txt
 rm club.txt
 
 # set up user /.venv
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv.sh|sudo /bin/bash
+# curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venv.sh|sudo /bin/bash
 
 # add venues
 curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venue.sh|sudo /bin/bash
 
 # install vs code by apt
-curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/vs_code_install.sh|sudo /bin/bash
+# curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/vs_code_install.sh|sudo /bin/bash
+
+# add zed editor
+sudo -u digilocal curl -f https://zed.dev/install.sh | sh
 
 # autostart chrome on digilocal user login
 mkdir /home/digilocal/.config/autostart/
