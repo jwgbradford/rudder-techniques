@@ -40,6 +40,7 @@ curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/master/venu
 
 # add zed editor
 su -c 'curl -f https://zed.dev/install.sh|sh' digilocal
+wget /home/digilocal/.config/zed https://raw.githubusercontent.com/jwgbradford/rudder-techniques/refs/heads/master/settings.json
 
 # autostart chrome on digilocal user login
 mkdir /home/digilocal/.config/autostart/
