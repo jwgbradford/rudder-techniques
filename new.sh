@@ -12,7 +12,10 @@ apt update
 apt upgrade -y
 
 # install main apt packages
-apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg libreoffice google-chrome-stable
+apt install -y apt-transport-https gdebi openjdk-11-jdk wget gpg libreoffice
+
+# add chrome via .deb
+curl https://raw.githubusercontent.com/jwgbradford/rudder-techniques/refs/heads/master/chrome-add.sh|sudo /bin/bash
 
 # set up desktop environment
 wget -P /usr/share/backgrounds https://digilocal.org.uk/wp-content/uploads/2023/01/digilocal-1920-1080.png
